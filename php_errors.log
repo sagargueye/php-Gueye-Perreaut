@@ -1,6 +1,0 @@
-[09-Feb-2018 16:14:49 Europe/Paris] PHP Notice:  Use of undefined constant PATH_MODELS - assumed 'PATH_MODELS' in /home/UNIV-LYON1/p1623082/public_html/cours3/DAO.php on line 2
-[09-Feb-2018 16:14:49 Europe/Paris] PHP Warning:  require_once(PATH_MODELSConnexion.php): failed to open stream: No such file or directory in /home/UNIV-LYON1/p1623082/public_html/cours3/DAO.php on line 2
-[09-Feb-2018 16:14:49 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'PATH_MODELSConnexion.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/UNIV-LYON1/p1623082/public_html/cours3/DAO.php on line 2
-[09-Feb-2018 16:14:54 Europe/Paris] PHP Notice:  Use of undefined constant PATH_MODELS - assumed 'PATH_MODELS' in /home/UNIV-LYON1/p1623082/public_html/cours3/DAO.php on line 2
-[09-Feb-2018 16:14:54 Europe/Paris] PHP Warning:  require_once(PATH_MODELSConnexion.php): failed to open stream: No such file or directory in /home/UNIV-LYON1/p1623082/public_html/cours3/DAO.php on line 2
-[09-Feb-2018 16:14:54 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'PATH_MODELSConnexion.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/UNIV-LYON1/p1623082/public_html/cours3/DAO.php on line 2
