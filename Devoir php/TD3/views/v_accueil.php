@@ -23,13 +23,13 @@
 <div><?php echo $cpt?> : film sélectionné(s)</div>
 
 <form action="index.php?page=accueil" method="post"> 
- <select name="liste">
+ <label>Choisir un genre : <select name="liste">
   <option value="Tous_les_genres">Tous les genres</option>
   <option value="Science_Fiction">Science Fiction</option>
   <option  value="Comedie">Comédie</option>
   <option  value="Film_musical">Film musical</option>
 </select>
-<input type="submit" value="<?= SUBMIT ?>">
+<input type="submit" value="<?= SUBMIT ?>"></label>
 </form> 
 
 <h1><?php  echo $t;?></h1>
@@ -37,10 +37,11 @@
 <!--  Formulaire -->
 
 
-<?php foreach($a as $val)
-{ ?><a href="index.php?page=hello&image=<?=$val?>"/>
+<?php foreach($aid as $val)
+
+{ ?><a href="index.php?page=hello&idi=<?=$val->getid()?>"/>
      <img
-         src="<?= PATH_IMAGES.$val?>"
+         src="<?= PATH_IMAGES.$val->getnomfichier()?>"
     alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
     height="200px" 
     width="200px" 

@@ -5386,3 +5386,43 @@
 [17-Feb-2018 13:18:26 Europe/Paris] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE) in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 43
 [17-Feb-2018 13:44:06 Europe/Paris] PHP Fatal error:  Can't use function return value in write context in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 3
 [17-Feb-2018 13:44:57 Europe/Paris] PHP Fatal error:  Can't use function return value in write context in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 3
+[17-Feb-2018 19:12:11 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:12:13 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:12:16 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:12:19 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:16:02 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:16:03 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:16:10 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:16:52 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:16:55 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:17:00 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:17:01 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:17:03 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:17:07 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:19:05 Europe/Paris] PHP Notice:  Use of undefined constant aid - assumed 'aid' in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:19:05 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:19:15 Europe/Paris] PHP Notice:  Use of undefined constant aid - assumed 'aid' in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:19:15 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:19:35 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:20:38 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:20:41 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:20:44 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 41
+[17-Feb-2018 19:29:23 Europe/Paris] PHP Fatal error:  Class 'filmDAO' not found in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 5
+[17-Feb-2018 19:37:37 Europe/Paris] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 135
+[17-Feb-2018 19:37:53 Europe/Paris] PHP Notice:  Undefined property: film::$getnomfichier in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:37:53 Europe/Paris] PHP Notice:  Undefined property: film::$getnomfichier in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:37:53 Europe/Paris] PHP Notice:  Undefined property: film::$getnomfichier in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:37:53 Europe/Paris] PHP Notice:  Undefined property: film::$getnomfichier in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:37:53 Europe/Paris] PHP Notice:  Undefined property: film::$getnomfichier in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_accueil.php on line 137
+[17-Feb-2018 19:37:53 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 42
+[17-Feb-2018 19:38:16 Europe/Paris] PHP Catchable fatal error:  Object of class film could not be converted to string in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_accueil.php on line 42
+[17-Feb-2018 19:41:01 Europe/Paris] PHP Fatal error:  Class 'filmDAO' not found in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 5
+[17-Feb-2018 19:42:03 Europe/Paris] PHP Notice:  Use of undefined constant idi - assumed 'idi' in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 6
+[17-Feb-2018 19:42:03 Europe/Paris] PHP Fatal error:  Call to a member function getnomfichier() on a non-object in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 7
+[17-Feb-2018 19:43:00 Europe/Paris] PHP Notice:  Use of undefined constant idi - assumed 'idi' in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 6
+[17-Feb-2018 19:43:00 Europe/Paris] PHP Fatal error:  Call to a member function getnomfichier() on a non-object in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 7
+[17-Feb-2018 19:43:05 Europe/Paris] PHP Notice:  Use of undefined constant idi - assumed 'idi' in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 6
+[17-Feb-2018 19:43:05 Europe/Paris] PHP Fatal error:  Call to a member function getnomfichier() on a non-object in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 7
+[17-Feb-2018 19:48:26 Europe/Paris] PHP Notice:  Undefined variable: resume in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/views/v_hello.php on line 40
+[17-Feb-2018 19:53:35 Europe/Paris] PHP Fatal error:  Class 'Utilisateur' not found in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/models/genreDAO.php on line 13
+[17-Feb-2018 19:56:34 Europe/Paris] PHP Fatal error:  Call to undefined method genre::getgenre() in /home/UNIV-LYON1/p1606501/public_html/Devoir php/TD3/controllers/c_hello.php on line 15

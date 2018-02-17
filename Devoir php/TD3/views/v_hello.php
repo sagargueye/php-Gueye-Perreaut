@@ -23,12 +23,34 @@
 <h1>Les détails du film</h1>
 
 <!--  Liste  -->
-     <img
+	 <div class = "col-md-6 col-sm-6 col-xs-12"> 
+	<img
          src="<?= PATH_IMAGES.$image?>"
     alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
     height="200px" 
     width="200px" 
-    /> 
+    />
+	<table class="table table-bordered" > 
+	    <tr>
+			<td>Titre</td>
+			<td><?=$titre?></td>
+		</tr>
+		<tr>
+			<td>Résumé</td>
+			<td><?=$resu?></td>
+		</tr>
+		<tr>
+			<td>Nom du fichier</td>
+			<td><?=$image?></td>
+		</tr>
+		<tr>
+			<td>Genre</td>
+			<td><?=$genre?></td>
+		</tr>
+	</table>
+	
+	
+	</div>
 <!--  Fin de la page -->
 
 

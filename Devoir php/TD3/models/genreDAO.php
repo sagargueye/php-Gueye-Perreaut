@@ -10,7 +10,7 @@ class genreDAO extends DAO
     $res = $this->queryRow('SELECT * FROM genre WHERE id = ?', array($id));
     if($res)
     {
-      return new Utilisateur($res['id'], $res['libelle']);
+      return new genre($res['id'], $res['libelle']);
     }
     else return null;     
 	

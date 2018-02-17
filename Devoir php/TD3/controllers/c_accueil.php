@@ -12,6 +12,7 @@
 require_once(PATH_MODELS.'filmDAO.php');
 
 $a = array();
+$aid= array();
 $cpt=0;
 
 if(isset($_POST['liste']))
@@ -29,6 +30,7 @@ if(isset($_POST['liste']))
 		if($f!=null)
 		{
 			$a[]=$f->getnomfichier();
+			$aid[]=$f;
 			$i=$i+1;
 			$cpt=$cpt+1;
 		}
@@ -50,6 +52,7 @@ if(isset($_POST['liste']))
 				if($f->getgenid()==1)
 				{
 					$a[]=$f->getnomfichier();
+					$aid[]=$f;
 					$cpt=$cpt+1;
 				}
 				$i=$i+1;
@@ -72,6 +75,7 @@ if(isset($_POST['liste']))
 				if($f->getgenid()==11)
 				{
 					$a[]=$f->getnomfichier();
+					$aid[]=$f;
 					$cpt=$cpt+1;
 				}
 				$i=$i+1;
@@ -94,6 +98,7 @@ if(isset($_POST['liste']))
 				if($f->getgenid()==30)
 				{
 					$a[]=$f->getnomfichier();
+					$aid[]=$f;
 					$cpt=$cpt+1;
 				}
 				$i=$i+1;
@@ -118,6 +123,7 @@ else
 		if($f!=null)
 		{
 			$a[]=$f->getnomfichier();
+			$aid[]=$f;
 			$i=$i+1;
 			$cpt=$cpt+1;
 		}
@@ -126,8 +132,6 @@ else
 
 	
 }
-
-
 
 
 require_once(PATH_VIEWS.$page.'.php'); 

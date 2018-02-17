@@ -16,7 +16,7 @@ class film
   {
     $this->_id = $id;
     $this->_titre = $titre;
-    $this->_resumme = $resume;
+    $this->_resume = $resume;
     $this->_nomfichier=$nomfichier;
     $this->_genid=$genid;
 
