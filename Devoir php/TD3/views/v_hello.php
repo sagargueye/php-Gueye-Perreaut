@@ -45,7 +45,7 @@
 		</tr>
 		<tr>
 			<td>Genre</td>
-			<td><?=$genre?></td>
+			<td><a href="javascript:history.go(-1)"><?=$genre?></a></td>
 		</tr>
 	</table>
 	

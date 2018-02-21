@@ -12,7 +12,7 @@
  */
 ?>
 <?php require_once(PATH_VIEWS.'header.php');?>
-<?php 
-  require_once(PATH_VIEWS.'alert.php');
-?>
+
+<div>Identifiant de film incorrect dans l'URL</div>
+
 <?php require_once(PATH_VIEWS.'footer.php'); 
