@@ -24,10 +24,10 @@
 
 <form action="index.php?page=accueil" method="post"> 
  <label>Choisir un genre : <select name="liste">
-  <option value="Tous_les_genres">Tous les genres</option>
-  <option value="Science_Fiction">Science Fiction</option>
-  <option  value="Comedie">Comédie</option>
-  <option  value="Film_musical">Film musical</option>
+  <option value="Tous les genres">Tous les genres</option>
+  <option value="Science Fiction">Science Fiction</option>
+  <option  value="Comédie">Comédie</option>
+  <option  value="Film musical">Film musical</option>
 </select>
 <input type="submit" value="<?= SUBMIT ?>"></label>
 </form> 
