@@ -27,10 +27,12 @@
 	<img
          src="<?= PATH_IMAGES.$image?>"
     alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
-    height="200px" 
-    width="200px" 
+    height="800px" 
+    width="500px" 
     />
-	<table class="table table-bordered" > 
+	</div>
+	<div class = "col-md-6 col-sm-6 col-xs-12"> 
+	<table class="table table-bordered"  > 
 	    <tr>
 			<td>Titre</td>
 			<td><?=$titre?></td>
@@ -48,8 +50,6 @@
 			<td><a href="javascript:history.go(-1)"><?=$genre?></a></td>
 		</tr>
 	</table>
-	
-	
 	</div>
 <!--  Fin de la page -->
 

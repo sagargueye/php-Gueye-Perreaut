@@ -21,3 +21,13 @@ if(isset($alert))
 <?php
 }
 
+if(isset($cpt))
+{
+?>
+	<div class="alert alert-<?= isset($alert['classeAlert']) ? $alert['classAlert'] : 'success' ?>">
+		<strong><?=$cpt?> film(s) sélectionné(s)</strong>
+	</div>
+<?php
+}
+
+

@@ -20,10 +20,9 @@
 
 
 <!--  Début de la page -->
-<div><?php echo $cpt?> : film sélectionné(s)</div>
 
 <form action="index.php?page=accueil" method="post"> 
- <label>Choisir un genre : <select name="liste">
+ <label>Quels films souhaitez-vous afficher ?  <select name="liste">
   <option value="Tous les genres" selected>Tous les genres</option>
   <option value="Science Fiction" <?php if(isset($liste)) if($liste=="Science Fiction") echo "selected"; ?>>Science Fiction</option>
   <option  value="Comédie" <?php if(isset($liste)) if($liste=="Comédie") echo "selected"; ?>>Comédie </option>
@@ -43,7 +42,7 @@
      <img
          src="<?= PATH_IMAGES.$val->getnomfichier()?>"
     alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
-    height="200px" 
+    height="300px" 
     width="200px" 
     /> 
 	</a>
