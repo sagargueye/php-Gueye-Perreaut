@@ -13,6 +13,8 @@
 ?>
 <?php require_once(PATH_VIEWS.'header.php');?>
 
-<div>Identifiant de film incorrect dans l'URL</div>
+<div class="alert alert-<?= isset($alert['classeAlert']) ? $alert['classAlert'] : 'danger' ?>">
+		<strong>Identifiant de film incorrect dans l'URL</strong>
+</div>
 
 <?php require_once(PATH_VIEWS.'footer.php'); 
