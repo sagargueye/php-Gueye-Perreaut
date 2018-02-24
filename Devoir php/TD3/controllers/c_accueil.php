@@ -29,7 +29,7 @@ if(isset($_POST['liste']))
             $i=$i+1;
             $g=$gDAO->getid($i);
         }
-        while($g->getlibelle()!=$liste);
+        while(($g!=null)&&($g->getlibelle()!=$liste));
         
         $j=0;
         

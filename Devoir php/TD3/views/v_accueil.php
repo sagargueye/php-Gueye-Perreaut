@@ -27,6 +27,7 @@
   <option value="Science Fiction" <?php if(isset($liste)) if($liste=="Science Fiction") echo "selected"; ?>>Science Fiction</option>
   <option  value="Comédie" <?php if(isset($liste)) if($liste=="Comédie") echo "selected"; ?>>Comédie </option>
   <option  value="Film musical" <?php if(isset($liste)) if($liste=="Film musical") echo "selected"; ?>>Film musical</option>
+  <option  value="Policier" <?php if(isset($liste)) if($liste=="Policier") echo "selected"; ?>>Policier</option>
 </select>
 <input type="submit" value="<?= SUBMIT ?>"></label>
 </form> 
