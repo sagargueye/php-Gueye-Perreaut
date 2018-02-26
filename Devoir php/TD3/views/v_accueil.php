@@ -24,13 +24,13 @@
 <form action="index.php?page=accueil" method="post"> 
  <label>Quels films souhaitez-vous afficher ?  <select name="liste">
   <option value="Tous les genres" selected>Tous les genres</option>
-  <option value="Science Fiction" <?php if(isset($liste)) if($liste=="Science Fiction") echo "selected"; ?>>Science Fiction</option>
-  <option  value="Comédie" <?php if(isset($liste)) if($liste=="Comédie") echo "selected"; ?>>Comédie </option>
-  <option  value="Film musical" <?php if(isset($liste)) if($liste=="Film musical") echo "selected"; ?>>Film musical</option>
-  <option  value="Policier" <?php if(isset($liste)) if($liste=="Policier") echo "selected"; ?>>Policier</option>
+  <?php foreach  ($ge as $val) { ?>
+  <option value="<?=$val->getlibelle()?>" <?php if(isset($liste)) if($liste==$val->getlibelle()) echo "selected"; ?>><?php echo $val->getlibelle()?></option>
+  <?php } ?>
 </select>
 <input type="submit" value="<?= SUBMIT ?>"></label>
 </form> 
+
 
 <h1><?php  echo $t;?></h1>
 

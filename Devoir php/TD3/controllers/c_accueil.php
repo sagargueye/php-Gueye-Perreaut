@@ -12,14 +12,29 @@
 require_once(PATH_MODELS.'filmDAO.php');
 require_once(PATH_MODELS.'genreDAO.php');
 
+$ge=array();
 $aid= array();
 $cpt=0;
+
+$gDAO=new genreDAO();
+
+$i=1;
+do
+{
+	$g=$gDAO->getid($i);
+	if($g!=null)
+	{
+	$ge[]=$g;
+	$i=$i+1;
+	}
+}
+while(($g!=null));
 
 if(isset($_POST['liste']))
 {
 	$liste= htmlspecialchars($_POST['liste']);
 	$fDAO = new filmDAO();
-	$gDAO=new genreDAO();
+	
 	
     if($liste!="Tous les genres")
 	{		
