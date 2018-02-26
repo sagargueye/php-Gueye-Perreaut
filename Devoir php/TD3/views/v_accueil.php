@@ -34,6 +34,19 @@
 
 <h1><?php  echo $t;?></h1>
 
+<?php
+if($cpt==0)
+{
+?>
+	<div class="alert alert-<?= isset($alert['classeAlert']) ? $alert['classAlert'] : 'danger' ?>">
+		<strong>Il n'y a aucun film dans cette catégorie</strong>
+	</div>
+<?php
+}
+?>
+
+
+
 <!--  Formulaire -->
 
 
