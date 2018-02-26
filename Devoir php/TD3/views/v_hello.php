@@ -47,7 +47,7 @@
 		</tr>
 		<tr>
 			<td>Genre</td>
-			<td><a href="javascript:history.go(-1)"><?=$genre?></a></td>
+			<td><a href="index.php?page=accueil&genre=<?=$genre?>"><?=$genre?></a></td>
 		</tr>
 	</table>
 	</div>

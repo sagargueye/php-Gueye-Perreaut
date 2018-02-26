@@ -16,6 +16,8 @@ $ge=array();
 $aid= array();
 $cpt=0;
 
+
+
 $gDAO=new genreDAO();
 
 $i=1;
@@ -30,6 +32,47 @@ do
 }
 while(($g!=null));
 
+if(isset($_GET['genre']))
+{
+
+	$genre= htmlspecialchars($_GET['genre']);
+	$fDAO = new filmDAO();
+	$liste=$genre;
+	
+    $i=0;
+        do
+        {
+            $i=$i+1;
+            $g=$gDAO->getid($i);
+        }
+        while(($g!=null)&&($g->getlibelle()!=$liste));
+        
+		
+        $j=0;
+        
+        do
+        {
+         $j=$j+1;
+         $f=$fDAO->getid($j);
+		 if($f!=null)
+		 {
+			if($f->getgenid()==$i)
+			{
+             $aid[]=$f;
+             $cpt=$cpt+1;
+			}
+		 }
+        }
+        while($f!=null);
+		
+		$t="Les films du genre $liste";
+
+
+		
+}
+else
+{
+	
 if(isset($_POST['liste']))
 {
 	$liste= htmlspecialchars($_POST['liste']);
@@ -46,6 +89,7 @@ if(isset($_POST['liste']))
         }
         while(($g!=null)&&($g->getlibelle()!=$liste));
         
+		
         $j=0;
         
         do
@@ -68,7 +112,8 @@ if(isset($_POST['liste']))
 	else
 	{
 	$t="Tous les genres";
-
+	
+	
 	$fDAO = new filmDAO();
 	$i=1;
 
@@ -87,6 +132,7 @@ if(isset($_POST['liste']))
 }
 else
 {
+
 	$t="Tous les genres";
 
 	$fDAO = new filmDAO();
@@ -105,6 +151,8 @@ else
 	while($f!=null);
 
 	
+}
+
 }
 
 
