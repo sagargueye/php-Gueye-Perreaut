@@ -21,6 +21,7 @@
 
 <!--  Début de la page -->
 
+<!--Formulaire permmetant d'afficher les éléments de la combobox en fonction des informations stocker dans la table genre-->
 <form action="index.php?page=accueil" method="post"> 
  <label>Quels films souhaitez-vous afficher ?  <select name="liste">
   <option value="Tous les genres" selected>Tous les genres</option>
@@ -31,11 +32,11 @@
 <input type="submit" value="<?= SUBMIT ?>"></label>
 </form> 
 
-
 <h1><?php  echo $t;?></h1>
 
+
 <?php
-if($cpt==0)
+if($cpt==0) // aucun film n'est compté 
 {
 ?>
 	<div class="alert alert-<?= isset($alert['classeAlert']) ? $alert['classAlert'] : 'danger' ?>">
@@ -49,13 +50,13 @@ if($cpt==0)
 
 <!--  Formulaire -->
 
-
+<!--Boucle permmetant d'afficher toutes les images des film en fonction du genre sélectionné dans la combobox-->
 <?php foreach($aid as $val)
 
 { ?><a href="index.php?page=hello&idi=<?=$val->getid()?>"/>
      <img
          src="<?= PATH_IMAGES.$val->getnomfichier()?>"
-    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
+    alt="Affiche du film"
     height="300px" 
     width="200px" 
     /> 

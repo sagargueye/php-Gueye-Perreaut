@@ -22,14 +22,15 @@
 <!--  Début de la page -->
 <h1>Les détails du film</h1>
 
-<!--  Liste  -->
+<!--  Affichage du l'image du film et du tableau contenant toutes ses informations  -->
+
 	 <div class = "col-md-6 col-sm-6 col-xs-12"> 
 	<img
          src="<?= PATH_IMAGES.$image?>"
-    alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]"
-    height="800px" 
-    width="500px" 
-    />
+        alt="Affiche du film"
+        height="800px" 
+        width="500px" 
+        />
 	</div>
 	<div class = "col-md-6 col-sm-6 col-xs-12"> 
 	<table class="table table-bordered"  > 
