@@ -1,6 +1,6 @@
 <?php
 
-// Message d'alerte permettant de d'afficher le nombre de film sélectionné
+// Message d'alerte permettant d'afficher le nombre de film sélectionné
 if(isset($cpt))
 {
 ?>
@@ -10,7 +10,7 @@ if(isset($cpt))
 <?php
 }
 
-// Message d'alerte permettant de d'afficher le nombre de film sélectionné
+// Message d'alerte permettant d'afficher un méssage d'erreur si l'id d'un film n'existe pas
 if($page==404)
 {
 ?>
