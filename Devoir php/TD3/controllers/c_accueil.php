@@ -3,16 +3,16 @@
 require_once(PATH_MODELS.'filmDAO.php');
 require_once(PATH_MODELS.'genreDAO.php');
 
-///////////////////////////////////// Deuxième partie ///////////////////////////////////////////////
+/////////////////////////////// Deuxième partie lorsque l'utilisateur clique sur une image/////////////////////////////////
 
 if(isset($_GET['idi']))
 {
 
-    $idi=htmlspecialchars($_GET['idi']); // variable donnée avec un GET
+    $idi=htmlspecialchars($_GET['idi']);// la variable idi est l'identifiant d'un film
     $fDAO=new filmDAO();
 
     $i=1;
-    $gd=0;
+    $gd=0; 
 
     // boucle qui permet de savoir si la variable idi correspond ou non à un film dans la base de donnéés
     do
@@ -31,15 +31,14 @@ if(isset($_GET['idi']))
 
     if($gd==1) 
     {
-        $f=$fDAO->getid($idi); // récupération des informations du film avec cette ID
-
-        $image=$f->getnomfichier(); // 
-        $resu=$f->getresume();      // récupératon individuel de toutes ses informations
-        $titre=$f->gettitre();          //
+        $f=$fDAO->getid($idi); 		// récupération des informations du film avec cette ID
+        $image=$f->getnomfichier(); 	// 
+        $resu=$f->getresume();      	// récupératon individuel de toutes ses informations
+        $titre=$f->gettitre();      	//
 
         $gDAO=new genreDAO(); 
         $g=$gDAO->getid($f->getgenid()); // récupération des information du genre du film
-        $genre=$g->getlibelle();        // récupération du libelle du film
+        $genre=$g->getlibelle();         // récupération du libelle du film
     }
     else
     {
@@ -47,12 +46,12 @@ if(isset($_GET['idi']))
     }
 
 }
-else ////////////////////////////////////////Première Partie///////////////////////////////////////////
+else ////////////////////////////////////////Première Partie Page principale///////////////////////////////////////////
 {
 
-    $ge=array(); //tableau qui contient la liste de tous les genres de la table genre
-    $aid= array(); // tableau qui contient la liste des films en fonction du genre sélectionné dans la combobox
-    $cpt=0;  // compte les film affiché sur la page accueil
+    $ge=array(); 	//tableau qui contient la liste de tous les genres de la table genre
+    $aid= array(); 	// tableau qui contient la liste des films en fonction du genre sélectionné dans la combobox
+    $cpt=0;  		// compte les film affiché sur la page accueil
 
     $gDAO=new genreDAO();
 
@@ -89,7 +88,7 @@ else ////////////////////////////////////////Première Partie///////////////////
 		
         $j=0;
         
-        // boucle permmettant de stocker dans la table aid tous les films qui possèdent l'Id récupéré dans la boucle au dessus
+        // boucle permettant de stocker dans la table aid tous les films qui possèdent l'Id récupéré dans la boucle au dessus
         do
         {
             $j=$j+1;
@@ -120,7 +119,7 @@ else ////////////////////////////////////////Première Partie///////////////////
             {		
                 $i=0; // contient l'id à récupérer
         
-                // boucle permmettant de connaitre l'Id du genre séléctionné dans la combobox
+                // boucle permettant de connaitre l'Id du genre séléctionné dans la combobox
                 do
                 {
                     $i=$i+1; // contient l'id à récupérer
@@ -131,7 +130,7 @@ else ////////////////////////////////////////Première Partie///////////////////
 		
                 $j=0;
         
-                // boucle permmettant de stocker dans la table aid tous les films qui possèdent l'id ($i) récupéré dans la boucle au dessus
+                // boucle permettant de stocker dans la table aid tous les films qui possèdent l'id ($i) récupéré dans la boucle au dessus
                 do
                 {
                     $j=$j+1;
@@ -153,13 +152,13 @@ else ////////////////////////////////////////Première Partie///////////////////
             }
             else
             {
-                $t="Tous les genres";
+                $t="Tous les genres"; // variable pour afficher le titre de la page
 	
 	
                 $fDAO = new filmDAO();
                 $i=1;
         
-                // boucle permmettant de stocker dans la table aid tous les films 
+                // boucle permettant de stocker dans la table aid tous les films 
                 do
                 {
                     $f=$fDAO->getid($i);
@@ -180,7 +179,7 @@ else ////////////////////////////////////////Première Partie///////////////////
 
             $fDAO = new filmDAO();
             $i=1;
-            // boucle permmettant de stocker dans la table aid tous les films 
+            // boucle permettant de stocker dans la table aid tous les films 
             do
             {
 		$f=$fDAO->getid($i);
