@@ -53,7 +53,7 @@ else //Première partie affichage de la page principale -->
 {
 ?>	
 
-	<!--Formulaire permmetant d'afficher les éléments de la combobox en fonction des informations stocker dans la table genre-->
+	<!--Formulaire permettant d'afficher les éléments de la combobox en fonction des informations stocker dans la table genre-->
 	<form action="index.php" method="post"> 
  		<label>Quels films souhaitez-vous afficher ?  
 			<select name="liste">
@@ -72,7 +72,7 @@ else //Première partie affichage de la page principale -->
 	
 	<?php require_once(PATH_VIEWS.'alert2.php');?>
 	
-	<!--Boucle permmettant d'afficher toutes les images des film en fonction du genre sélectionné dans la combobox-->
+	<!--Boucle permettant d'afficher toutes les images des film en fonction du genre sélectionné dans la combobox-->
 	<?php foreach($aid as $val)
 	{ ?>
 		<a href="index.php?idi=<?=$val->getid()?>"/>
