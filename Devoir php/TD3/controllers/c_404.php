@@ -1,14 +1,10 @@
 <?php
-/*
- * MODULE DE PHP
- * Controller page 404
- *
- * Copyright 2016, Eric Dufour
- * http://techfacile.fr
- *
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
- */
 
-//appel de la vue
+if(isset($_GET['page'])
+{
+	$page=htmlspecialchars $_GET['page'];
+}
+
 require_once(PATH_VIEWS.'404.php'); 
+
+

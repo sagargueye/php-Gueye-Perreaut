@@ -1,8 +1,8 @@
 <!--  En tête de page -->
 <?php require_once(PATH_VIEWS.'header.php');?>
 
-<!--  Zone message d'alerte -->
-<?php require_once(PATH_VIEWS.'alert.php');?>
+<!--  Zone message d'alerte 1 -->
+<?php require_once(PATH_VIEWS.'alert1.php');?>
 
 
 <!--  Début de la page -->
@@ -12,9 +12,9 @@
 {
 ?>
 
-<h1>Les détails du film</h1>
+	<h1>Les détails du film</h1>
 
-<!--  Affichage de l'image du film et du tableau contenant toutes ses informations  -->
+	<!--  Affichage de l'image du film et du tableau contenant toutes ses informations  -->
 
 	<div class = "col-md-6 col-sm-6 col-xs-12"> 
 		<img
@@ -59,7 +59,7 @@ else //Première partie affichage de la page principale -->
 			<select name="liste">
   				<option value="Tous les genres" selected>Tous les genres</option>
   				<?php foreach  ($ge as $val) { ?>
-  				<option value="<?=$val->getlibelle()?>" <?php if(isset($liste)) if($liste==$val->getlibelle()) echo "selected"; ?>><?php echo $val->getlibelle()?></option>
+					<option value="<?=$val->getlibelle()?>" <?php if(isset($liste)) if($liste==$val->getlibelle()) echo "selected"; ?>><?php echo $val->getlibelle()?></option>
   				<?php } ?>
 			</select>
 			<input type="submit" value="<?= SUBMIT ?>">
@@ -68,19 +68,11 @@ else //Première partie affichage de la page principale -->
 
 	<h1><?php  echo $t;?></h1>
 
-
-	<?php
-	if($cpt==0) // aucun film n'est compté 
-	{
-	?>
-		<div class="alert alert-<?= isset($alert['classeAlert']) ? $alert['classAlert'] : 'danger' ?>">
-			<strong>Il n'y a aucun film dans cette catégorie</strong>
-		</div>
-	<?php
-	}
-	?>
-
-	<!--Boucle permmetant d'afficher toutes les images des film en fonction du genre sélectionné dans la combobox-->
+	<!--  Zone message d'alerte 2-->
+	
+	<?php require_once(PATH_VIEWS.'alert2.php');?>
+	
+	<!--Boucle permmettant d'afficher toutes les images des film en fonction du genre sélectionné dans la combobox-->
 	<?php foreach($aid as $val)
 	{ ?>
 		<a href="index.php?idi=<?=$val->getid()?>"/>

@@ -1,13 +1,4 @@
 <?php
-/* Module de PHP
- * Paramètres de configuration du site
- *
- * Copyright 2017, Eric Dufour
- * http://techfacile.fr
- *
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
- */
  
 const DEBUG = true; // production : false; dev : true
 

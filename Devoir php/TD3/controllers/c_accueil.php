@@ -120,7 +120,7 @@ else ////////////////////////////////////////Première Partie///////////////////
             {		
                 $i=0; // contient l'id à récupérer
         
-                // boucle permmetant de connaitre l'Id du genre séléctionné dans la combobox
+                // boucle permmettant de connaitre l'Id du genre séléctionné dans la combobox
                 do
                 {
                     $i=$i+1; // contient l'id à récupérer
