@@ -12,7 +12,7 @@ const BD_PWD = '269879';
 const LANG ='FR-fr';
 
 // Paramètres du site : nom de l'auteur ou des auteurs
-const AUTEUR = ''; 
+const AUTEUR = 'PERREAUT & GUEYE'; 
 
 //dossiers racines du site
 define('PATH_CONTROLLERS','./controllers/c_');
